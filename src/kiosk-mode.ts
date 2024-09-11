@@ -264,7 +264,8 @@ class KioskMode implements KioskModeRunner {
 			this.options[OPTION.KIOSK] ||
 			this.options[OPTION.HIDE_HEADER]
 		) {
-			addStyle(STYLES.HEADER, this.huiRoot);
+			console.log("Not inserting header style");
+			//addStyle(STYLES.HEADER, this.huiRoot);
 			if (queryString(SPECIAL_QUERY_PARAMS.CACHE)) setCache(OPTION.HIDE_HEADER, TRUE);
 		} else {
 			removeStyle(this.huiRoot);
